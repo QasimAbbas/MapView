@@ -12,6 +12,7 @@ import MapKit
 class LocationSearchTableViewController: UITableViewController {
     var results: [MKMapItem]? = nil
     var handleMapSearchDelegate:MapSearch? = nil
+    var storyboardIdentifier = String()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -110,9 +111,14 @@ class LocationSearchTableViewController: UITableViewController {
 extension LocationSearchTableViewController : UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         
-        DAO.sharedDAO.localSearchAPI?.createSearchRequestWithKeywords(searchWords: searchController.searchBar.text ?? "")
-        results = DAO.sharedDAO.localSearchAPI?.matchingItems
-        self.tableView.reloadData()
+        if(storyboardIdentifier == "GoogleMaps"){
+            
+        }else{
+            DAO.sharedDAO.localSearchAPI?.createSearchRequestWithKeywords(searchWords: searchController.searchBar.text ?? "")
+            results = DAO.sharedDAO.localSearchAPI?.matchingItems
+            self.tableView.reloadData()
+        }
+        
     }
     
    

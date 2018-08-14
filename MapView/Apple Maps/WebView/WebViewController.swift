@@ -41,7 +41,7 @@ class WebViewController: UIViewController, WKUIDelegate {
     
     
     @objc func backVC(){
-        
+        print("Back")
     }
 
 }

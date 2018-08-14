@@ -28,7 +28,10 @@ class ViewController: UIViewController, MKMapViewDelegate{
         locationManager.requestLocation()
         
         addPins()
-        
+        setupSearch()
+    }
+    
+    func setupSearch() {
         
         let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTable") as! LocationSearchTableViewController
         resultSearchController = UISearchController(searchResultsController: locationSearchTable)

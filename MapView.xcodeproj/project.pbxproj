@@ -22,6 +22,9 @@
 		96D476E6212212690004ECFE /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D476E5212212690004ECFE /* DAO.swift */; };
 		96D476E921221B780004ECFE /* LocationSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D476E821221B780004ECFE /* LocationSearchTableViewController.swift */; };
 		96D476EB21222CEC0004ECFE /* MapSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D476EA21222CEC0004ECFE /* MapSearch.swift */; };
+		96F988F321237CAF00A4CC5A /* CustomMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F988F221237CAF00A4CC5A /* CustomMarker.swift */; };
+		96F988F52123817900A4CC5A /* GoogleLocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F988F42123817900A4CC5A /* GoogleLocationSearchTable.swift */; };
+		96F988F7212382B400A4CC5A /* GooglePlacesSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F988F6212382B400A4CC5A /* GooglePlacesSearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		96D476E5212212690004ECFE /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
 		96D476E821221B780004ECFE /* LocationSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTableViewController.swift; sourceTree = "<group>"; };
 		96D476EA21222CEC0004ECFE /* MapSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearch.swift; sourceTree = "<group>"; };
+		96F988F221237CAF00A4CC5A /* CustomMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMarker.swift; sourceTree = "<group>"; };
+		96F988F42123817900A4CC5A /* GoogleLocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLocationSearchTable.swift; sourceTree = "<group>"; };
+		96F988F6212382B400A4CC5A /* GooglePlacesSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesSearch.swift; sourceTree = "<group>"; };
 		DDBE78D5E1A409022CAA280C /* Pods-MapView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapView/Pods-MapView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,13 +76,13 @@
 		961E2DBD2122384B00742A2E /* Apple Maps */ = {
 			isa = PBXGroup;
 			children = (
+				96B71E2A2112466D001AB320 /* Main.storyboard */,
 				96B71E262112466D001AB320 /* AppDelegate.swift */,
 				96D476EA21222CEC0004ECFE /* MapSearch.swift */,
 				963AAB512121DFB400208AE6 /* LocalSearchAPI.swift */,
 				96D476E821221B780004ECFE /* LocationSearchTableViewController.swift */,
 				96D476E721221B230004ECFE /* Map */,
 				963AAB502118F2EF00208AE6 /* WebView */,
-				96B71E2A2112466D001AB320 /* Main.storyboard */,
 			);
 			path = "Apple Maps";
 			sourceTree = "<group>";
@@ -85,6 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				961E2DBB2122382000742A2E /* Google.storyboard */,
+				96F988F6212382B400A4CC5A /* GooglePlacesSearch.swift */,
+				96F988F42123817900A4CC5A /* GoogleLocationSearchTable.swift */,
+				96F988F221237CAF00A4CC5A /* CustomMarker.swift */,
 				961E2DBF2122389900742A2E /* GoogleViewController.swift */,
 			);
 			path = "Google Maps";
@@ -264,14 +273,17 @@
 			files = (
 				96D476E921221B780004ECFE /* LocationSearchTableViewController.swift in Sources */,
 				96D476E6212212690004ECFE /* DAO.swift in Sources */,
+				96F988F52123817900A4CC5A /* GoogleLocationSearchTable.swift in Sources */,
 				96B71E292112466D001AB320 /* ViewController.swift in Sources */,
 				963AAB522121DFB400208AE6 /* LocalSearchAPI.swift in Sources */,
+				96F988F321237CAF00A4CC5A /* CustomMarker.swift in Sources */,
 				963AAB4D2118E79800208AE6 /* WebViewController.swift in Sources */,
 				963AAB4F2118F2E400208AE6 /* NavViewController.swift in Sources */,
 				96D476EB21222CEC0004ECFE /* MapSearch.swift in Sources */,
 				96B71E272112466D001AB320 /* AppDelegate.swift in Sources */,
 				96D476E421220CE20004ECFE /* CustomPinAnnotation.swift in Sources */,
 				961E2DC02122389900742A2E /* GoogleViewController.swift in Sources */,
+				96F988F7212382B400A4CC5A /* GooglePlacesSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
